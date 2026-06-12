@@ -65,7 +65,7 @@ jobs:
           path: './kustomize' # On clone dans un sous-dossier pour ne pas écraser l'espace de travail
 
       - name: Mettre à jour la version de l'image
-        working-directory: ./kustomize/overlay/dev
+        working-directory: ./kustomize/overlay/dev/
         run: |
           kustomize edit set image spring-petclinic=ghcr.io/sassiadel/spring-petclinic:${{ github.sha }}
 
