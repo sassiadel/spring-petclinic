@@ -62,7 +62,7 @@ jobs:
         with:
           repository: 'sassiadel/tp7' # A REMPLACER (ex: <VOTRE_USER_GITHUB>/gitops-infra)
           token: ${{ secrets.GITOPS_PAT }}
-          path: '/kustomize/overlay/dev/' # On clone dans un sous-dossier pour ne pas écraser l'espace de travail
+          path: 'tp7' # On clone dans un sous-dossier pour ne pas écraser l'espace de travail
 
       - name: Mettre à jour la version de l'image
         working-directory: ./tp7/kustomize/overlay/dev/
