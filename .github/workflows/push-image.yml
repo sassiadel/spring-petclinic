@@ -70,7 +70,7 @@ jobs:
           kustomize edit set image spring-petclinic=ghcr.io/sassiadel/spring-petclinic:${{ github.sha }}
 
       - name: Commit et Push vers le dépôt d'infrastructure
-        working-directory: sassiadel/tp7/
+        working-directory: tp7
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
